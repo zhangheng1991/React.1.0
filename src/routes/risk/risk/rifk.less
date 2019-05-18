@@ -1,0 +1,113 @@
+//.parent {
+//  //width: 400px;
+//  height: 200px;
+//  background: red;
+//  position: relative;
+//}
+//.child{
+//  //width: 200px;
+//  //height: 100px;
+//  background: #9ff;
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate( -50%,-50%);
+//}
+
+//
+//.parent {
+//  display: table-cell;
+//  vertical-align: middle;
+//}
+//.child{
+//  margin: 0 auto;
+//  border: 1px solid red;
+//  width: 100px;
+//  height: 100px;
+//}
+
+//.parent {
+//  width:600px;
+//  height:800px;
+//  background:#ddd;
+//  position:relative;
+//}
+//.child{
+//  width:200px;
+//  height:300px;
+//  background:#666;
+//  color:#fff;
+//  position: absolute;
+//  margin: auto;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//}
+
+
+//平铺
+.Posied{
+  //position: fixed;
+  //top:0px;
+  //left:0px;
+  //bottom: 0px;
+  //right: 0px;
+  //border: 1px solid red;
+  //background-size: 100%;
+  //background-image: url("../../../img/red.jpg");
+  //background-repeat: no-repeat;
+}
+
+//.parent{
+//  width:100%;
+//  height:800px;
+//  background:#ddd;
+//  position:relative;
+//
+//}
+//.child{
+//  //width:200px;  //添加宽度，高度，则上下左右都居中，去掉也是
+//  //height:300px;
+//  background:#666;
+//  position: absolute;
+//  left: 50%;  /* 父盒子宽度的50% */
+//  top: 50%;   /* 父盒子高度的50% */
+//  transform: translate(-50%,-50%);    /* 子盒子自身宽高的50% */
+//}
+
+.parent{
+  width:900px;
+  height:200px;
+  //display: table-cell;    /*使标签元素以表格单元格的形式呈现*/
+  text-align: center;   /* 水平居中*/
+  //vertical-align: middle; /* 垂直居中 */
+  border: 1px solid green;
+  display: table-cell;
+  vertical-align: middle;
+}
+.child{
+  display: inline-block;  /* 将子盒子设置为行内块级（文本格式）*/
+  color:#333333;
+  margin: 0 auto;
+  padding:10px;
+}
+
+//常用弹性布局
+
+//.parent{
+//  display: flex;
+//  justify-content: center;    /* 水平方向 居中*/
+//  align-items: center;
+//  height: 300px;/* 垂直方向 居中*/
+//  border: 1px solid green;
+//}
+.BoxCon{
+  display: flex;
+  span{
+    display: block;
+    padding:10px 20px;
+    border: 1px solid red;
+
+  }
+}

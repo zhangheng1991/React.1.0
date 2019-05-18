@@ -1,0 +1,118 @@
+.ReportSearch{
+  height:40px;
+  padding: 5px 20px 10px 5px;
+  margin:10px 5px;
+  background:white;
+  :global{
+    .ant-tabs-bar{
+      margin-bottom: 0px;
+      border: none;
+    }
+    .ant-tabs-nav-wrap{
+      height: 40px;
+    }
+    .ant-tabs-tab{
+      padding: 2px 15px;
+      border: 1px solid  #dfdfdf;
+      text-align: center;
+      font-size: 12px;
+      color: #333;
+      margin: 0 10px;
+      border-radius: 4px;
+
+    }
+    .ant-tabs-nav .ant-tabs-tab:hover {
+      background:#438ce2;
+      color: white;
+    }
+    .ant-tabs-tab-active{
+      background:#438ce2;
+      color: white;
+    }
+    .ant-tabs-ink-bar ,.ant-tabs-ink-bar-animated{
+      display: none !important;
+    }
+    .ant-input{
+      height: 26px;
+    }
+  }
+}
+
+.ReportMenu{
+  height: 100vh;
+  background: #E3E7EE;
+  padding-top:10px;
+  :global{
+    .ant-menu-root{
+      height: 80vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      background: #D3DDED;
+      margin: 0px !important;
+    }
+    .ant-menu-root::-webkit-scrollbar,
+    .ant-menu-root::-webkit-scrollbar-thumb,
+    .ant-menu-root::-webkit-scrollbar-track{
+      height: 0;
+      width: 0;
+      background: 0;
+    }
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background: white !important;
+      span{
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    .ant-menu-inline .ant-menu-item{
+      height: 36px;
+      line-height: 36px;
+      margin: 0px;
+    }
+    .ant-menu-item-selected{
+      background: white !important;
+      span{
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    .ant-menu-item-selected:hover{
+      span{
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title{
+      height: 36px;
+      line-height: 36px;
+      margin: 0px;
+      font-size: 14px;
+      color: #333333;
+    }
+    .ant-menu-submenu-open{
+      background: white;
+      margin: 0px;
+
+    }
+    .ant-menu-submenu-open::after{
+      display: block;
+      border-right: 3px solid #FBA629;
+      right: 100%;
+      left: 0px;
+
+    }
+    .ant-menu-inline  .ant-menu-item::after{
+      display:block;
+      border-right: 3px solid #FBA629;
+      right: 100%;
+      left: 0px;
+    }
+    .ant-menu-inline .ant-menu-item-selected::before{
+      display:block;
+      border-right: 3px solid #FBA629;
+      right: 100%;
+      left: 0px;
+
+    }
+  }
+}

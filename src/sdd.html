@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <script src="jquery.js"></script>
+  <script src="test.js"></script>
+    <title>Title</title>
+</head>
+<body>
+  <ul id="f">
+
+  </ul>
+  <ul>
+    <span>标题</span>
+    <span>姓名</span>
+    <span>年龄</span>
+    <span>部门</span>
+  </ul>
+  <ul id="data">
+   <div>
+     <span>标题</span>
+     <span>姓名</span>
+     <span>年龄</span>
+     <span>部门</span>
+   </div>
+  </ul>
+  <script>
+   $(function () {
+     Test('f','sdd.html')
+   })
+   $.ajax({
+     url:'sdd.html',
+     type:'get',
+     data:'',
+     success:function (state) {
+       var state=[
+         {
+           key:'1',
+           title:'标题一',
+           name:'张恒',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'2',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'3',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'4',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'5',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'6',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'7',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'8',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'9',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'10',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'11',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'12',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'13',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         },
+         {
+           key:'14',
+           title:'标题二',
+           name:'张衡',
+           age:'26',
+           part:'技术部'
+         }
+       ];
+       var TableContent=state.map((item)=>{
+         return'<div key='+item.key+'>' +
+           '<span>'+item.title+'</span>' +
+           '<span>'+item.name+'</span>' +
+           '<span>'+item.age+'</span>' +
+           '<span>'+item.part+'</span>' +
+           '</div> '
+       })
+       $('#data').append(TableContent)
+     },
+     error:function (state) {
+
+     }
+   })
+
+  </script>
+</body>
+</html>

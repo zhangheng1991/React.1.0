@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .www{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="sss" >浮动</div>
+     <div class="www">
+       sdfsdfsdfsdf
+     </div>
+  </div>
+</body>
+<script>
+  var fu =document.getElementsByClassName("sss")[0];
+  var con =document.getElementsByClassName("www")[0];
+
+  fu.onmouseover=function () {
+    console.log(1111)
+    con.style.display="block";
+    con.style.display = 'block';
+  }
+  fu.onmousemove=function () {
+    console.log(222)
+    console.log(fu)
+    con.style.display="none";
+  }
+</script>
+</html>

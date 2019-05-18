@@ -1,0 +1,90 @@
+.ViewMore{
+  h1{
+    font-size: 20px;
+    color:#333333;
+  }
+}
+.ViewBox{
+  background: white;
+  overflow: hidden;
+  padding: 0px 10px;
+ div{
+    display: inline-block;
+  }
+  div:nth-child(1){
+    width: 80px;
+    text-align: left;
+    overflow: hidden;
+    float: left;
+    height: 35px;
+    line-height: 38px;
+    h3{
+      float: left;
+    }
+ }
+  div:nth-child(2){
+    width: 90%;
+    div{
+      display: inline;
+    }
+  }
+  div:nth-child(3){
+    overflow: hidden;
+    float: right;
+    margin-right: 30px;
+    height: 35px;
+    line-height: 38px;
+    button{
+      background: none;
+      font-size: 12px;
+      color: #333333;
+      cursor: pointer;
+    }
+  }
+  h3{
+
+  }
+}
+:global{
+  .MoreSpan{
+    height: 35px;
+    overflow: hidden;
+    span{
+      display: inline-block;
+      padding: 5px 15px;
+      margin: 5px 10px;
+      border: 1px solid #dfdfdf;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #333333;
+      cursor: pointer;
+    }
+    .active{
+      background: #CFEAF7;
+      border: 1px solid #438ce2;
+      color: #438ce2;
+    }
+
+  }
+  .PackButton{
+    display: none;
+  }
+  //.BoxButton{
+  //  .MoreButton::after{
+  //    display: inline-block;
+  //    content: "\E61D";
+  //  .PackButton::after{
+  //    display: inline-block;
+  //    content: "\E61E";
+  //  }
+  //}
+  .OpenButton{
+    .PackButton{
+      display: block;
+    }
+    .MoreButton{
+      display: none;
+    }
+  }
+
+}

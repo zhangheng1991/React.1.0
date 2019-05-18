@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>如何隐藏鼠标放在A标签上时浏览器左下角显示的跳转界面地址</title>
+<body>
+
+<a href="javascript:;" onclick="redirect($(this))" val="http://www.baidu.com">A标签跳转</a>
+
+</body>
+<script charset="utf-8" src="jquery-min.js"></script>
+<script>
+  /**
+   * 跳转
+   */
+  function redirect(options) {
+    var url = options.attr('val');
+    window.location.href = url;
+  }
+</script>
+</html>

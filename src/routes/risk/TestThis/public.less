@@ -1,0 +1,63 @@
+:global{
+  .contain{
+    width: 100%;
+    padding: 10px;
+    background: white;
+    .title{
+      overflow: hidden;
+      h3{
+        display: inline-block;
+      }
+      span{
+        float: right;
+      }
+    }
+  }
+  .box{
+    .BottomName{
+      display: none;
+    }
+  }
+  .NewContain{
+    .BottomTitle{
+      display: none;
+    }
+    .BottomName{
+      display:block;
+    }
+
+  }
+  //BottomName
+  .BoxContainer div{
+    margin: 10px 0px;
+  }
+  .BoxContainer>div:nth-child(2n +1 ){
+    background: #E6EBF6;
+  }
+  .BoxContainer>div:nth-child(2n ){
+    background: white;
+  }
+
+}
+.bottom{
+  overflow: hidden;
+  span{
+    float: right;
+    cursor: pointer;
+  }
+}
+.BottomTitle,.BottomName{
+  margin: 10px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  padding: 10px;
+}
+.BottomTitle{
+  background: white;
+}
+.BottomName{
+  background: #438BE1;
+  div,span{
+    color: white;
+  }
+}
